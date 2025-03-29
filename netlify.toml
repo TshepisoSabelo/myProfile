@@ -1,4 +1,4 @@
+
 [build]
-  publish = "src/"       # Netlify serves files from src/
-  command = "cp -R public/ src/public/"  # Copies images into src/
-  
+publish = "src/"
+command = ""  # Empty command (no build step needed for HTML/CSS)

@@ -1,4 +1,0 @@
-
-[build]
-publish = "src/"
-command = ""  # Empty command (no build step needed for HTML/CSS)

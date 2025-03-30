@@ -350,6 +350,7 @@ header .box1{
 
 @media(max-width:750px){
     .navBar{
+        width: 100%;
         height: 60px;
     }
     .icon{

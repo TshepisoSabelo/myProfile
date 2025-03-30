@@ -64,9 +64,6 @@ html, body{
 }
 .container{
     width: 100%;
-    margin: auto auto;
-    padding-left: 5%;
-    padding-right: 5%;
 }
 
 .navBar{
@@ -82,6 +79,9 @@ html, body{
     box-shadow: 10px 2px 15px rgb(70, 70, 70, 0.7);
     top: 0;
     z-index: 1000;
+    margin: auto auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .pages{
@@ -181,10 +181,12 @@ header .box1{
     z-index: 3;
     transition: 0.3s ease-in-out;
     animation: slideInLeft 1s ease-in;
+    margin-left: 0;
+    padding-left: 0;
 }
 
 .intro h1{
-    font-size: 90px;
+    font-size: 70px;
     margin: 0 0;
     color:#00d9fa ;
 }
@@ -195,8 +197,9 @@ header .box1{
 }
 
 .intro p{
+    font-size: large;
     margin: 0 0;
-    color:#00d9fa ;
+    color:#00d9fa;
 }
 
 .topSkills{
@@ -209,6 +212,10 @@ header .box1{
     transition: 1s ease-in-out;
     transform: popOut 1s ease-in;
     box-shadow: 2px 2px 15px rgb(80, 80, 80, 0.4);
+    z-index: 5;
+    margin: auto auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .topSkills ul{
@@ -292,14 +299,53 @@ header .box1{
     width: 250px;
     display: flex;
     min-width: 200px;
-    padding: 0 10px 0;
     border-radius: 10px;
     flex-direction: column;
     background-color: #282828;
+    transition: transform 0.2s ease-in-out;
     animation: popOut 1.5s forwards;
     animation-timeline: view();
     animation-range-start: entry 0% cover 80%;
     box-shadow: 2px 2px 15px rgb(80, 80, 80, 0.4);
+    position: relative;
+}
+.Project img{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.Project .description{
+    visibility: hidden;
+    width: 80%;
+    height: 60%;
+    padding: 20% 10% 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    background: linear-gradient(transparent, #00d9fa);
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.description h2{
+    text-decoration: underline;
+    margin: 0;
+    cursor: pointer;
+}
+
+.description p{
+    margin: 0;
+}
+
+.Project:hover img{
+    opacity: 0.3;
+}
+
+.Project:hover .description
+{
+    visibility: visible;
+    flex-direction: column;
 }
 
 @media(max-width:750px){
@@ -313,9 +359,6 @@ header .box1{
 
     button, .pages{
         display: none;
-    }
-    .first_Content{
-        flex-direction: column;
     }
     .socials{
         display: none;
@@ -340,7 +383,7 @@ header .box1{
     header .box1{
         width: 300px;
         height: 300px;
-        top: 300px;
+        top: 280px;
     }
     .intro{
         display: flex;
@@ -348,8 +391,8 @@ header .box1{
         align-items: center;
         justify-content: center;
         box-sizing: border-box;
-        padding: 0 5% 0;
-        margin: 10px auto;
+        padding-left: 10%;
+        margin: 10px 5px;
     }
     .intro h1{
         font-size: 40px;

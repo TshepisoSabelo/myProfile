@@ -83,6 +83,10 @@ html, body{
     padding-left: 5%;
     padding-right: 5%;
 }
+.logo{
+    width: 200px;
+    margin: 0 0;
+}
 
 .pages{
     list-style-type:none;
@@ -406,6 +410,86 @@ header .box1{
     width: 200px;
 }
 
+.reachOut{
+    width: 100%;
+    background-image: url("assets/corperate.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin: 40px auto;
+    padding: 80px 0px 40px 0px;
+}
+
+.reachOut h1, h4{
+    font-weight: normal;
+    margin: 0 0;
+}
+
+.reachOut .inputs{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 90%;
+}
+
+.reachOut input{
+    background-color: transparent;
+    border: none;
+    border-bottom:2px solid #00d9fa;
+    width: 50%;
+    height: 30px;
+    color:  white;
+}
+
+.reachOut button{
+    margin: 10px auto;
+    width: 100px;
+    height: 35px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: #00d9fa;
+    border: 1px solid #00d9fa;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.reachOut button:hover{
+    transform: scale(1.02);
+    background-color: #00d9fa;
+    border: none;
+    color: white;
+}
+
+.footersocials{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 0px;
+}
+
+.footersocials li a{
+    color: #00d9fa;
+    font-size: x-large;
+}
+
+
 @media(max-width:750px){
     .navBar{
         width: 100%;
@@ -476,10 +560,25 @@ header .box1{
         justify-content: center;
     }
 
+    .Projects{
+        gap: 40px;
+    }
+
     .certificate{
-        border-bottom: 2px solid;
+        border-bottom: 1px solid;
         border-right: none;
         padding-bottom: 20px;
+    }
+
+    .Footer .pages{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-bottom: 1px solid rgb(150 150 150);
+        border-top: 1px solid rgb(150 150 150);
+        gap: 5px;
+        padding: 20px 0px 20px 0px;
     }
 
 }

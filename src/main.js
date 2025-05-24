@@ -10,7 +10,8 @@ function closeMenu() {
             popUpMenu.style.display = 'none';
             closeIcon.style.display = 'none';
             menuIcon.style.display = 'flex';
-            document.body.classList.remove("no-scroll");
+            document.body.style.position = 'fixed';
+            document.body.style.overflow = 'hidden';
     }}
 
     function openMenu() {
@@ -18,7 +19,6 @@ function closeMenu() {
             popUpMenu.style.display = 'flex';
             menuIcon.style.display = 'none';
             closeIcon.style.display = 'flex';
-            document.body.classList.add("no-scroll");
             }
         }
 

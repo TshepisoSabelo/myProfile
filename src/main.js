@@ -1,20 +1,27 @@
 //creating new variables
-let menuIcon = document.querySelector('.bx.bx-menu');
+let menuIcon = document.querySelector('.icon');
+let closeIcon = document.querySelector('.icon2');
 let popUpMenu = document.querySelector('.popUpMenu');
 
 //creating a function to toggle the menu
-function toggleMenu() {
+function closeMenu() {
     //checking if the menu is open
     if (popUpMenu.style.display ===  'flex'){
-        menuIcon.addEventListener('click', function() {
-            popUpMenu.display = 'none';
-    })}
-    else{
-        menuIcon.addEventListener('click', function() {
+            popUpMenu.style.display = 'none';
+            closeIcon.style.display = 'none';
+            menuIcon.style.display = 'flex';
+            document.body.classList.remove("no-scroll");
+    }}
+
+    function openMenu() {
+        if (popUpMenu.style.display === 'none' || popUpMenu.style.display === '') {
             popUpMenu.style.display = 'flex';
-            })
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'flex';
+            document.body.classList.add("no-scroll");
+            }
         }
-    }
 
     // Attach the event listener once
-menuIcon.addEventListener('click', toggleMenu);
+menuIcon.addEventListener('click', openMenu);
+closeIcon.addEventListener('click',  closeMenu);

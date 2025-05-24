@@ -10,8 +10,6 @@ function closeMenu() {
             popUpMenu.style.display = 'none';
             closeIcon.style.display = 'none';
             menuIcon.style.display = 'flex';
-            document.body.style.position = 'fixed';
-            document.body.style.overflow = 'hidden';
     }}
 
     function openMenu() {

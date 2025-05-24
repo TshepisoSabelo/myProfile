@@ -67,7 +67,7 @@ html, body{
 }
 
 .navBar{
-    position: sticky;
+    position: fixed;
     display: flex;
     flex-direction:row;
     align-items: center;
@@ -130,7 +130,10 @@ ul li a:hover{
 }
 
 .icon2{
-    display:none
+    display:none;
+    justify-content: right;
+    align-items: center;
+    padding: 20px 20px;
 }
 
 .popUpMenu{
@@ -146,7 +149,7 @@ ul li a:hover{
     padding: 10px 10px 10px 10px;
     list-style: none;
     position: fixed;
-    top: 50px;
+    top: 0px;
 }
 
 .popUpMenu li{
@@ -567,6 +570,7 @@ header .box1{
         display: flex;
         justify-content: right;
         margin-right: 10px;
+        
     }
 
     .icon2{
@@ -574,6 +578,7 @@ header .box1{
         justify-content: right;
         margin-right: 10px;
         font-size: larger;
+        color: white;
     }
 
     .popUpMenu{

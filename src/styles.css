@@ -618,6 +618,10 @@ header .box1{
         height: 300px;
         top: 280px;
     }
+
+    .reachOut Button{
+        display: block;
+    }
     .intro{
         display: flex;
         flex-direction: column;

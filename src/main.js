@@ -23,3 +23,19 @@ function closeMenu() {
     // Attach the event listener once
 menuIcon.addEventListener('click', openMenu);
 closeIcon.addEventListener('click',  closeMenu);
+
+//creating a classthat represents a ticket
+//creating a variable that holds the tickets
+
+class Ticket{
+    name;
+    email;
+    message;
+    constructor(name, email, message) {
+        this.name = name;
+        this.email = email;
+        this.message = message;
+    }
+
+    //function to
+}

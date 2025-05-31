@@ -110,20 +110,25 @@ ul li a:hover{
     text-decoration: underline;
 }
 
-.socials{
+.contactme{
+    border-radius: 18px;
     width: fit-content;
-    list-style-type: none;
+    height: fit-content;
+    padding: 10px 20px 10px 20px;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
     transition: 0.3s ease-in-out;
     animation: popOut 0.5s ease-in;
+    background-color: #00d9fa;
 }
 
-.socials li a{
-    color: #00d9fa;
-    font-size: x-large;
+.contactme a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
 }
+
 
 .icon{
     display: none;
@@ -380,25 +385,26 @@ header .box1{
 }
 
 .achievements{
-    height: 100%;
+    height: fit-content;
     width: 75%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    margin: 40px auto;
 }
 
 .achievement{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 60%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
     height: 100%;
     margin: 5px 0px;
     color: whitesmoke;
-    background-color: #00d9fa;
-    padding: 0px 10px 0px 10px;
+    padding: 0px 10px 0px 0px;
 }
 
 .boxA{
@@ -424,13 +430,24 @@ header .box1{
     background-color: rgb(250, 250, 250, 0.2);
     border-radius:64% 36% 28% 72% / 33% 35% 65% 67% ;
 }
+.achievement_description{
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+}
 
 .achievement h3{
     font-weight: 200;
+    width: 95%;
 }
 
 .achievements img{
-    width: 35%;
+    width: 40%;
+    left: 0px;
+    min-width: 450px;
 }
 
 .certificates{
@@ -475,6 +492,7 @@ header .box1{
 .certificate p{
     font-weight: lighter;
     margin: 2px 0;
+    max-width: 280px;
 }
 
 .certificate:hover{
@@ -593,7 +611,7 @@ header .box1{
     button, .pages{
         display: none;
     }
-    .socials{
+    .contactme{
         display: none;
     }
 

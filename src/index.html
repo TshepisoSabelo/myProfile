@@ -22,19 +22,13 @@
         <button class = "contactme"><a href = 'https://www.linkedin.com/in/tshepiso-motshoene-9a547b245?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app' >Contact Me</a></button>
         <div class = "icon"><i class='bx bx-menu'></i></div>
     </nav>
-     <ul class = "popUpMenu">
-            <li class = 'icon2'><i class='bx bx-x'></i></li>
-            <li><a>Home</a></li>
-            <li><a>About</a></li>
-            <li><a>Resume</a></li>
-            <li><a>Projects</a></li>
-        </ul>
     <header class = "container headerelement">
         <div class = "intro">
             <h2>Hi!</h2> 
             <h1>I'm Tshepiso</h1>
-            <p>Aspiring ML Engineer</p>
-            <p>BSc in Computer Science and Informatics student.</p>
+            <p class = "text1">Aspiring ML Engineer</p>
+            <p class = "text1">BSc in Computer Science and Informatics student.</p>
+            <p class = "mobileonlytext">Aspiring ML Engineer</br>BSc in Computer Science and Informatics student.</p>
         </div>
         <img class = "profilepic" src = "assets/a8c59273-cb72-4582-8f82-d465af33f8e5.png">
         <div class = "box1"></div>
@@ -92,17 +86,19 @@
         -->
         </div>
     </section>
-    <section class = "achievements">
+    <section class = "achievements" id = "about">
         <div class = "boxA"></div>
         <div class = "boxB"></div>
         <div class = "achievement">
             <img src = "assets/collage.png">
             <div class = "achievement_description">
-                <h2>Achievement Name</h2>
-                <h4>DATE | ORGANIZATION</h4>
-                <h3 class = "achievement_description">sk.jads s ada dakjd a.,d ak.jd adkj; adk;aj dka;j dksf fdfksd fk
-                kkdsjf ksd fkdsh fsfaewkhf skf ksf keh fksf sfsjjw ofbfj sf safkj
-                jkdsfksdjfkj dsfkjd fkjds fsdf wkriusfhd nlawnoi houbkj fks.</h3>
+                <h2>ABOUT ME</h2>
+                <h4>Student | University of Johannesburg</h4>
+                <p class = "achievement_description">I am a BSc Computer Science and Informatics student at the University of Johannesburg, specializing in Artificial Intelligence. 
+                    In addition to my academic journey, I am a self-taught web developer with a growing skill set in modern web technologies—currently focused on learning React.js.
+                    I'm passionate about building impactful solutions and am actively working on the GKSS Challenge for university students, where I apply both my technical knowledge 
+                    and creativity. My long-term goal is to become an AI Engineer, leveraging data science, software development, and machine learning to solve real-world problems.
+                    I’m always open to collaborating on innovative software development and data science projects. Let’s connect and build something great together.</p>
             </div>
             
         </div>
@@ -166,7 +162,7 @@
             <img class = "logo" src="assets/logo.png" alt="logo_img">
             <ul class = "pages">
                 <li><a href = "index.html">Home</a></li>
-                <li><a href = "">About</a></li>
+                <li><a href = "#about">About</a></li>
                 <li><a href = "">Resume</a></li>
                 <li><a href = "#projects">Projects</a></li>
             </ul>
@@ -179,6 +175,13 @@
             <p>CopyWrite</p>
         </div>
     </footer>
+    <ul class = "popUpMenu">
+        <li class = 'icon2'><i class='bx bx-x'></i></li>
+        <li><a href = "index.html">Home</a></li>
+        <li><a href = "#about">About</a></li>
+        <li><a href = "">Resume</a></li>
+        <li><a href = "#projects">Projects</a></li>
+    </ul>
     <script src="main.js"></script>
 </body>
 </html>

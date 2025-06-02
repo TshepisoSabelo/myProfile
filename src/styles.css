@@ -162,7 +162,10 @@ ul li a:hover{
     padding: 5px 0px 5px 0px;
     text-align: center;
     border-bottom: 1px solid rgb(150, 150, 150);
+    cursor: pointer;
 }
+
+
 header{
     width: 90%;
     display: flex;
@@ -238,6 +241,13 @@ header .box1{
     font-size: large;
     margin: 0 0;
     color:#00d9fa;
+}
+
+.mobileonlytext{
+    display: none;
+    padding: 0 auto; 
+    justify-content: center;
+    text-align: center;
 }
 
 .topSkills{
@@ -398,13 +408,11 @@ header .box1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 10px;
     width: 100%;
     height: 100%;
-    margin: 5px 0px;
     color: whitesmoke;
-    padding: 0px 10px 0px 0px;
+    border-bottom: white 1px solid;
 }
 
 .boxA{
@@ -437,17 +445,27 @@ header .box1{
     flex-direction: column;
     justify-content: center;
     align-items: left;
+    text-align: justify;
 }
 
-.achievement h3{
+.achievement h2{
+    font-size: xx-large;
+    color: #00d9fa;
+    margin: 5px;
+}
+
+.achievement p{
     font-weight: 200;
     width: 95%;
+    justify-content: justify;
+    margin-bottom: 20px;
 }
 
 .achievements img{
     width: 40%;
     left: 0px;
     min-width: 450px;
+    border-top: white 1px solid;  
 }
 
 .certificates{
@@ -637,8 +655,34 @@ header .box1{
         top: 280px;
     }
 
+    .intro{
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 10px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text1{
+        display: none;
+    }
+
+   .mobileonlytext{
+        display: flex;
+        padding: 0 auto; 
+        justify-content: center;
+        text-align: center;
+    }
+
     .reachOut Button{
         display: block;
+    }
+
+    .intro{
+       top: 100px;
+       margin: 0 auto;  
     }
     .intro{
         display: flex;
@@ -674,6 +718,36 @@ header .box1{
 
     .Projects{
         gap: 40px;
+    }
+
+    .achievement_description{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .achievements{
+        margin: 10px auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .achievement{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100vw;
+        margin: 0 auto;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .achievements img{
+    width: 80%;
+    left: 0px;
+    margin: 0 auto;
     }
 
     .certificate{

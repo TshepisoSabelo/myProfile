@@ -2,6 +2,18 @@
 let menuIcon = document.querySelector('.icon');
 let closeIcon = document.querySelector('.icon2');
 let popUpMenu = document.querySelector('.popUpMenu');
+const heading = document.querySelector('.projectsHeadings');
+
+const observer = new IntersectionObserver(([entry]) => {
+  if (entry.isIntersecting) {
+    heading.classList.add('animate');
+  }
+}, {
+  threshold: 0.2
+});
+
+observer.observe(heading);
+
 
 //creating a function to toggle the menu
 function closeMenu() {

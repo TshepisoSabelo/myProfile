@@ -9,11 +9,13 @@
   }
 
   @keyframes popOut{
-    from {
+    0% {
+      transform: scale(0.9);
       opacity: 0;
     }
 
     to {
+      transform: scale(1);
       opacity: 1;
     }
   }
@@ -293,9 +295,11 @@ header .box1{
     margin: 40px auto;
     display: flex;
     justify-content: space-between;
-    animation: popOut 1.5s forwards;
-    animation-timeline: view();
-    animation-range-start: entry 0% cover 80%;
+
+}
+
+.projectHeadings .animate{
+     animation: popOut 1.5s forwards;
 }
 
 .heading h4{
@@ -343,6 +347,9 @@ header .box1{
     justify-content: space-evenly;
     color: white;
     margin-bottom: 100px;
+    animation: popOut 1.5s forwards;
+    animation-timeline: view();
+    animation-range-start: entry 0% cover 80%;
 }
 
 .Projects .Project{

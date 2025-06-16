@@ -2,7 +2,8 @@
 let menuIcon = document.querySelector('.icon');
 let closeIcon = document.querySelector('.icon2');
 let popUpMenu = document.querySelector('.popUpMenu');
-const heading = document.querySelector('.projectsHeadings');
+let heading = document.querySelector('.projectsHeadings');
+let menuOptions = document.querySelectorAll('.menuOption');
 
 const observer = new IntersectionObserver(([entry]) => {
   if (entry.isIntersecting) {
@@ -32,9 +33,10 @@ function closeMenu() {
             }
         }
 
-    // Attach the event listener once
+// Attach the event listener once
 menuIcon.addEventListener('click', openMenu);
 closeIcon.addEventListener('click',  closeMenu);
+menuOptions.forEach((menuOption) =>{ menuOption.addEventListener('click', closeMenu); });
 
 //creating a classthat represents a ticket
 //creating a variable that holds the tickets

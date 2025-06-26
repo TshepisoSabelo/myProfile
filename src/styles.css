@@ -107,7 +107,6 @@ ul li a{
 ul li a:hover{
     color: #00d9fa;
     transition: right 0.3s ease-in-out;
-    text-decoration: underline;
 }
 
 .contactme{

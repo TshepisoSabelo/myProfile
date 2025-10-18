@@ -56,12 +56,16 @@ class Ticket{
 // Sends an email using the user's input from the contact form via emailjs service.
 // Expects input fields with IDs 'nameInput', 'emailInput', and 'messageInput' to exist in the DOM.
 function sendMail() {
-    let userName = document.getElementById('nameInput').value;
-    let userEmail = document.getElementById('emailInput').value;
-    let userMessage = document.getElementById('messageInput').value;
+    let userName = document.getElementById('name').value;
+    let userEmail = document.getElementById('email').value;
+    let userMessage = document.getElementById('message').value;
 
-    emailjs.send("service_2un7zfe","template_ef8wwzf",ticket)
+    emailjs.send("service_2un7zfe","template_yb7l3dw",{
+        name: userName,
+        email: userEmail,
+        subject: "New inquiry Submission",
+        message: userMessage
+    })
         .then(() => alert("Message Sent"))
         .catch((error) => alert("Failed to send message: " + error))
-        .then(() => alert("Message Sent"));
 }

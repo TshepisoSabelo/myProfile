@@ -9,16 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Miltonian+Tattoo&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-    (function(){
-      emailjs.init({
-        publicKey: "9v7zDp_SGj4jegNc1",
-      });
-    })();
-</script>
+
 </head>
 <body class = "body">
     <nav class = "container navBar">
@@ -160,11 +151,11 @@
     <section class = "container2 reachOut">
         <h1>HAVE ANY QUESTIONS?</h1>
         <h4>Send me a quick messsage</h4>
-        <form class = "inputs">
-            <input type = "text" placeholder="Name" maxlength="20" required></input>
-            <input type ="email" placeholder="Email Address" required></input>
-            <input type = "text" placeholder="Meesage" maxlength="500" minlength="10" rows = '5'></input>
-            <button type="submit" onclick = "sendEmail"> Submit</button>
+        <form class = "inputs" onsubmit="sendMail(); return false;">
+            <input id = "name" type = "text" placeholder="Name" maxlength="20" required />
+            <input id = "email" type="email" placeholder="Email Address" required />
+            <textarea id = "message" type = "text" placeholder="Message" maxlength="500" minlength="10" rows="5" required></textarea>
+            <button type="submit">Submit</button>
         </form>
     </section>
         
@@ -195,5 +186,15 @@
         <li><a class = "menuOption" href = "#projects">Projects</a></li>
     </ul>
     <script src="main.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "9v7zDp_SGj4jegNc1",
+      });
+    })();
+</script>
 </body>
 </html>

@@ -15,7 +15,6 @@ const observer = new IntersectionObserver(([entry]) => {
 
 observer.observe(heading);
 
-
 //creating a function to toggle the menu
 function closeMenu() {
     //checking if the menu is open
@@ -52,4 +51,13 @@ class Ticket{
     }
 
     //function to
+}
+
+function sendMail() {
+    let userName = document.getElementById('nameInput').value;
+    let userEmail = document.getElementById('emailInput').value;
+    let userMessage = document.getElementById('messageInput').value;
+    let ticket = new Ticket (userName, userEmail, userMessage);
+
+    emailjs.send("service_2un7zfe","template_ef8wwzf",ticket).then(alert("Message Sent"))
 }

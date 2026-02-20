@@ -62,6 +62,13 @@ html, body{
     background-color: #323232;
     margin: 0 0;
 }
+
+h2{
+    font-weight: 600;
+    margin: 0;
+    cursor: pointer;
+}
+
 .container{
     width: 100%;
 }
@@ -285,7 +292,7 @@ header .box1{
 }
 .container2{
     width: 80%;
-    margin: auto auto;
+    margin: 40px auto;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -355,13 +362,12 @@ header .box1{
 .project{
     width: fit-content;
     max-width: 380px;
+    margin: 10px 0px 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    padding: 10px 10px 10px;
     flex-direction: column;
-    background-color: #282828;
     transition: transform 0.2s ease-in-out;
     animation: popOut 1.5s forwards;
     animation-timeline: view();
@@ -375,15 +381,18 @@ header .box1{
 }
 
 .description{
-    margin: 20px 0px 10px;
+    position: absolute;
+    bottom: 0px;
+    border-radius: 0px 0px 10px 10px;
+    padding: 20px 10px;
     transition: transform 0.2s ease-in-out;
+    background: linear-gradient(
+        to top,
+        black,
+        transparent
+    );
     gap: 10px;
-}
-
-.description h2{
-    text-decoration: underline;
-    margin: 0;
-    cursor: pointer;
+    visibility: hidden;
 }
 
 .project:hover img{
@@ -400,6 +409,7 @@ header .box1{
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: left;
     gap: 10px;
     padding: 0px 0px 0px 0px;
@@ -409,6 +419,40 @@ header .box1{
 .skills-used li{
     background-color: rgb(168, 168, 168);
     padding: 5px 10px 5px;
+    border-radius: 15px;
+}
+
+.btn-moreInfo{
+    width: fit-content;
+    padding: 8px 20px;
+    border: 2px solid #00d9fa;
+    border-radius: 5px;
+    font-size: large;
+    color: white;
+    background-color: #00d9fa;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.btn-moreInfo:hover{
+    transform: translateY(-2px);
+}
+
+.btn-moreInfo:active{
+    transform: translateY(0px);
+    box-shadow: 0 0 20px rgba(0, 217, 250, 0.7);
+}
+
+.bx{
+    font-size: xx-large;
+    color: #00d9fa;
 }
 
 .achievements{
@@ -418,7 +462,7 @@ header .box1{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .achievement{
@@ -485,6 +529,98 @@ header .box1{
     border-top: white 1px solid;  
 }
 
+.skills-section {
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+    display: grid;;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    background: linear-gradient(to right, rgb(30, 30, 30), #323232, rgb(30,30,30));
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.skills-list{
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+    gap: 20px;
+    padding: 0px 0px 0px 0px;
+}
+
+.skills-list li{
+    background-color: rgb(168, 168, 168);
+    padding: 5px 10px 5px;
+    border-radius: 15px;
+}
+
+.technical-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill {
+    margin: 20px 10px 20px;
+}
+
+.skill-name {
+    margin-bottom: 6px;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 12px;
+    background: #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.skill-fill {
+    height: 100%;
+    width: 0;
+    border-radius: 20px;
+    background: linear-gradient(
+    to right,
+    #6a11cb,
+    #2575fc
+    );
+    transition: width 1.2s ease-in-out;
+}
+
+/* Animate on page load */
+
+.skills-section:hover .cpp {
+    width: 85%;
+}
+
+.skills-section:hover .javascript {
+    width: 65%;
+}
+
+.skills-section:hover .react {
+    width: 70%;
+}
+
+.skills-section:hover .java {
+    width: 80%;
+}
+
+.skills-section:hover .python {
+    width: 70%;
+}
+
+.skills-section:hover .sql {
+    width: 65%;
+}
+
 .certificates{
     display: flex;
     align-items: center;
@@ -502,7 +638,6 @@ header .box1{
     margin: 50px auto;
     padding: 0 2% 0;
     border: rgb(150, 150, 150);
-    border-right:2px solid;
     transition: transform 0.4s ease-in-out;
 }
 
@@ -759,6 +894,13 @@ header .box1{
         width: 100vw;
         margin: 0 auto;
         padding: 0px 0px 0px 0px;
+    }
+
+    .skills-section {
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     }
 
     .achievements img{

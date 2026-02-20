@@ -872,7 +872,7 @@ header .box1{
         gap: 40px;
     }
 
-    .project{
+    .project .description{
         width: 95%;
         max-width: none;
     }

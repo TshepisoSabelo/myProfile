@@ -625,7 +625,7 @@ header .box1{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: auto auto;
+    margin: 0px auto 20px auto;
     flex-wrap: wrap;
 }
 
@@ -872,6 +872,11 @@ header .box1{
         gap: 40px;
     }
 
+    .project{
+        width: 95%;
+        max-width: none;
+    }
+
     .achievement_description{
         width: 90%;
         display: flex;
@@ -894,6 +899,31 @@ header .box1{
         width: 100vw;
         margin: 0 auto;
         padding: 0px 0px 0px 0px;
+        border-bottom: none;
+    }
+
+    .cpp {
+        width: 85%;
+    }
+
+    .javascript {
+        width: 65%;
+    }
+
+    .react {
+        width: 70%;
+    }
+
+    .java {
+        width: 80%;
+    }
+
+    .python {
+        width: 70%;
+    }
+
+    .sql {
+        width: 65%;
     }
 
     .skills-section {
@@ -901,6 +931,10 @@ header .box1{
         margin: 20px auto;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .skills-heading{
+        display: none;
     }
 
     .achievements img{
